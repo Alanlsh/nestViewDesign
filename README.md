@@ -1,3 +1,6 @@
 # nestViewDesign
 嵌套视图设计Demo
 
+同一视图多个tableView联动，共用一个headView
+
+viewControllerd的view承接一个scrollView和上半部分视图，scrollView上可以有多个tableview，tableview设置一个满足上半部分遮盖tableView是也无法遮挡内容的headView（并不会显示出来）headView的尺寸根据上半部分的尺寸及滚动的区间决定。只需监测tableView的偏移量来设置上半部分的位置，不需设置tableView的偏移量。
